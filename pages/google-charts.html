@@ -1,0 +1,171 @@
+<html>
+  <head>
+    <title>Index Page</title>
+    <link href="../css/vendor/bootstap/bootstap.min.css" rel="stylesheet">
+    <link href="font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        #maindiv{
+            padding-top: 20;
+            padding-left: 0;
+            align-self: center;
+        }
+        td{
+            font-size: x-small;
+        }
+        .carousel-item img {
+            width:100%;
+            height:400px;
+        }
+        div>caption{
+            padding: 20px;
+        }
+        #maindiv{
+            padding-top: 50px;
+        }
+
+        h2{
+            background-color: rgb(55, 136, 161);
+            padding: 10px;
+        }
+     </style>
+    
+    <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+      // Load the Visualization API and the corechart package.
+      google.charts.load('current', {'packages':['corechart']});
+
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.charts.setOnLoadCallback(drawChart);
+
+      // Callback that creates and populates a data table,
+      // instantiates the pie chart, passes in the data and draws it.
+      function drawChart() {
+
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Language');
+        data.addColumn('number', 'Students');
+        data.addRows([
+            ['Elephant Falls', 550],
+            ['Umiam Lake', 175],
+            ['Laitlum Canyons', 250],
+            ['Shillong Peak', 220],
+            ['Mawlynnong', 350],
+            ['Krangshuri Falls', 375],
+            ['Butterfly Museum', 100],
+            ['Cherrapunji', 210],
+            ['Mawsynram', 260],
+            ['Wards Lake', 190]
+          
+        ]);
+
+        // Set chart options
+        var options = {'title':'City Attractions',
+                       'width':500,
+                       'height':400};
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="./index.html">Home </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
+                    aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarID">
+                <ul class="navbar-nav">
+                    
+                    <li class="nav-item"><a class="nav-link" href="./About.html">About Shillong Tourism</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./google-charts.html">City Attractions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./Lobsterfonts.html">Lobster Fonts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./google-maps.html">Locate us</a></li>
+                </ul>
+   
+            </div>
+        </div>
+    </nav>
+    <div class="container" id="maindiv">
+        <br><br>
+        <h2 align="center">City Attractions</h2>
+        <br>
+        <div class="row">
+            <div class="col-md-8">
+                <table class="table table-bordered border-primary table-secondary">
+                    <thead class="table-warning table-bordered border-primary">
+                        <th scope="col">Popular Tourist Places </th>
+                        <th scope="col">Places visited most</th>
+                        <th scope="col">Description</th>
+                    </thead>
+                    <tr>
+                        <th scope="row">Elephant Falls</th>
+                        <td>550</td>
+                        <td> Tipu Sultan Fort ideally represents the artistic talent which thrived in the past and is among the most fascinating Bangalore tourist places. </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Umiam Lake</th>
+                        <td>175</td>
+                        <td> This botanical garden is one of the most beautiful places to visit in Bangalore, and perhaps all of India. Built by Haider Ali, the garden was later modified by Tipu Sultan. </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Laitlum Canyons</th>
+                        <td>250</td>
+                        <td>Known to be one of the most respected Bangalore tourist places, it is also famous for its active involvement in social causes and its contribution to helping people rediscover spirituality and foster growth. </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Shillong Peak</th>
+                        <td>220</td>
+                        <td>Located a couple of kilometers on the outskirts of Bangalore is the Bannerghatta National Park that is a significant part of Bangalore sightseeing.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Mawlynnong</th>
+                        <td>350</td>
+                        <td>Offering statues of famous personalities, the park is one among the popular places to visit in Bangalore with friends.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Krangshuri Falls</th>
+                        <td>375</td>
+                        <td>A huge man-made tank located in West Bangalore, serves as one of the popular landmarks of the present. </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Butterfly Museum</th>
+                        <td>100</td>
+                        <td>Wonderla Bangalore is one of the best amusement parks and places to see in Bangalore.td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Cherrapunji</th>
+                        <td>210</td>
+                        <td>One of the most popular places to visit in Bangalore, this place is spread over an enormous area of over 58 acres and is a great place for someone who wishes to see the magical world of cinema up close. </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Mawsynram</th>
+                        <td>260</td>
+                        <td>Considered to be one of the most beautiful Shiva temples in India, Shiva Temple is among the most beautiful Bangalore tourist places.  </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Wards Lake</th>
+                        <td>190</td>
+                        <td> HAL Aerospace Museum holds a prestigious place in the list of the major places to see in Bangalore. </td>
+                    </tr>
+                </table>
+            </div>
+            <!--Div that will hold the pie chart-->
+            <div class="col-md-4" id="chart_div"></div>
+        </div>
+    </div>
+    
+    <script src="./js/vendor/jquery/jquery.js"></script>
+    <script src="./js/vendor/popper/popper.js"></script>
+   <script src="./js/vendor/Bootstap/bootstap.min.js"></script>
+</body>
+</html>
